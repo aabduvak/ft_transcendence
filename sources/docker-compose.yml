@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  frontend:
+    build: frontend/
+    container_name: frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend/src:/app/src
+      - ./frontend/public:/app/public
+      - /app/node_modules
+    stdin_open: true
+    tty: true # same as -it
+    restart: always
+
+  # backend:
+  #   build: backend/
+  #   container_name: backend
+  #   ports:
+  #     - "8888:8888"
+  #   depends_on:
+  #     - database
+  #   networks:
+  #     - general
+  #   restart: always
+
+  # database:
+  #   container_name: database
+  #   image: mongo
+  #   networks:
+  #     - general
+  #   restart: always
+
+networks:
+  general:
