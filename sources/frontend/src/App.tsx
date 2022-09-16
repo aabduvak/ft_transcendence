@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
 import { Footer, Navbar } from './components';
-import { About, Home, Forum, Team, Play, History, LeaderBoard, Users } from './pages';
+import { About, Home, Forum, Team, Play, History, LeaderBoard, Users, Http404 } from './pages';
 
 const App = () => {
     return (
@@ -19,6 +19,7 @@ const App = () => {
                 <Route path='/history' element={<History />}/>
                 <Route path='/leader-board' element={<LeaderBoard />}/>
                 <Route path='/users' element={<Users />}/>
+                <Route path='*' element={<Http404 />}/>
             </Routes>
             <Footer />
         </div >
