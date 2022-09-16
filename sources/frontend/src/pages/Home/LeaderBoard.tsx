@@ -4,7 +4,7 @@ import { TableRow } from '../../components';
 const LeaderBoard = () => {
 	return (
 		<React.Fragment>
-			<div className="leader-board p-8 bg-base-300">
+			<div className="leader-board p-8 pb-12 bg-base-300">
 				<div className="container my-0 mx-auto">
 					<h3 className='text-white text-4xl font-bold text-center mb-4'>Leader Board</h3>
 					<p className='text-center'>Dummy text is also used to demonstrate the appearance of different typefaces and layouts</p>
