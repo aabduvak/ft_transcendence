@@ -10,7 +10,7 @@ const Partners = () => {
 	return (
 		<React.Fragment>
 			<div className="partners p-8 bg-base-100">
-				<div className="container mx-0 my-auto">
+				<div className="container my-0 mx-auto">
 					<h3 className='text-white text-4xl font-bold text-center mb-4'>Game Partners</h3>
 					<p className='text-center'>Dummy text is also used to demonstrate the appearance of different typefaces and layouts</p>
 					
