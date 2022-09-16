@@ -1,9 +1,13 @@
 import React from "react";
+import Bonus from "../Home/Bonus";
+import Promo from "../Home/Promo";
+import Stats from "../Home/Stats";
 
 const About = () => {
 	return (
 		<React.Fragment>
-			<h1>About</h1>
+			<Promo />
+			<Bonus />
 		</React.Fragment>
 	);
 }
