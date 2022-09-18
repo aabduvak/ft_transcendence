@@ -7,5 +7,17 @@ import History from './History';
 import LeaderBoard from './Board';
 import Users from './Users';
 import Http404 from './Error';
+import Profile from './Profile';
 
-export {About, Forum, Home, Team, Play, History, LeaderBoard, Users, Http404};
+export {
+	About,
+	Forum,
+	Home,
+	Team,
+	Play,
+	History,
+	LeaderBoard,
+	Users,
+	Http404,
+	Profile
+};
