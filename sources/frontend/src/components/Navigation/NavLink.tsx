@@ -1,9 +1,9 @@
-import React from "react";
+import React, { ReactEventHandler } from "react";
 import { Link } from "react-router-dom";
 
 interface NavLinkComponents {
 	link: string,
-	text: string
+	text: string,
 }
 
 const NavLink = ({link, text}: NavLinkComponents) => {

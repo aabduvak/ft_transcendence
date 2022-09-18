@@ -47,6 +47,8 @@ const App = () => {
                     <Route path='/leader-board' element={<LeaderBoard />} />
                     <Route path='/users' element={<Users />} />
                     <Route path='/users/:userId' element={<Profile />} />
+                    <Route path='/auth' element={<Home />} />
+                    <Route path='/logout' element={<Home />} />
                     <Route path='*' element={<Http404 />} />
                 </Routes>
                 <Footer />
