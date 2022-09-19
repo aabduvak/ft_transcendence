@@ -14,7 +14,7 @@ const NavLinks = () => {
 					Deep Thought
 				</Link>
 			</div>
-			<div className="col-span-7">
+			<div className="col-span-7 flex justify-center">
 				<ul className="menu menu-horizontal p-0">
 					<NavLink text="About" link="/about" />
 					<NavLink text="Team" link="/team" />
@@ -48,15 +48,16 @@ const NavLinks = () => {
 							</div>
 						</label>
 						<ul tabIndex={0} className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-300 rounded-box w-52">
+							
 							<li>
-								<a className="justify-between">
+								<Link to={'/profile'} className='justify-between'>
 									Profile
 									<span className="badge">New</span>
-								</a>
+								</Link>
 							</li>
-							<li><a>Friends</a></li>
-							<li><a>Chat</a></li>
-							<li><a>Settings</a></li>
+							<NavLink text="Friends" link="/friends"/>
+							<NavLink text="Chat" link="/chat"/>
+							<NavLink text="Settings" link="/settings"/>
 							<li>
 								<Link to={'/logout'} onClick={auth.logout}>
 									Logout

@@ -23,58 +23,53 @@ const LeaderBoard = () => {
 							<tbody>
 								<TableRow 
 									avatar={'https://avatars.githubusercontent.com/u/64299663?v=4'}
-									country={'Türkiye'} 
+									country={'Türkiye'}
 									level={112}
 									name={'Abdulaziz Abduvakhobov'}
 									link={'/profile'}
 									played={243}
 									rank={1}
-									rate={78}
-								/>
+									rate={78} online={false}								/>
 								
 								<TableRow 
 									avatar={'https://daisyui.com/tailwind-css-component-profile-1@56w.png'}
-									country={'USA'} 
+									country={'USA'}
 									level={110}
 									name={'Brice Swyre'}
 									link={'/profile/'}
 									played={227}
 									rank={2}
-									rate={64}
-								/>
+									rate={64} online={false}								/>
 								
 								<TableRow 
 									avatar={'https://daisyui.com/tailwind-css-component-profile-3@56w.png'}
-									country={'France'} 	
+									country={'France'}
 									level={108}
 									name={'Marjy Ferencz'}
 									link={'/profile/'}
 									played={187}
 									rank={3}
-									rate={74}
-								/>
+									rate={74} online={false}								/>
 								
 								<TableRow 
 									avatar={'https://daisyui.com/tailwind-css-component-profile-2@56w.png'}
-									country={'USA'} 	
+									country={'USA'}
 									level={105}
 									name={'Hart Hagerty'}
 									link={'/profile/'}
 									played={162}
 									rank={4}
-									rate={67}
-								/>
+									rate={67} online={false}								/>
 								
 								<TableRow 
 									avatar={'https://daisyui.com/tailwind-css-component-profile-5@56w.png'}
-									country={'Brazil'} 	
+									country={'Brazil'}
 									level={104}
 									name={'Yancy Tear'}
 									link={'/profile/'}
 									played={155}
 									rank={5}
-									rate={80}
-								/>
+									rate={80} online={false}								/>
 							</tbody>
 						</table>
 					</div>

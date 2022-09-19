@@ -9,10 +9,28 @@ interface RowDetails {
 	played: number,
 	level: number,
 	link: string,
-	rate: number
+	rate: number,
+	online: boolean
 }
 
-const TableRow = ({name, country, rank, avatar, played, level, link, rate}: RowDetails) => {
+const TableRow = (
+	{
+		name,
+		country,
+		rank,
+		avatar,
+		played,
+		level,
+		link,
+		rate,
+		online = false
+	}: RowDetails) => {
+	
+	let status = 'offline';
+	
+	if (online)
+		status = 'online'
+	
 	return (
 		<tr>
 			<th>
@@ -21,7 +39,7 @@ const TableRow = ({name, country, rank, avatar, played, level, link, rate}: RowD
 			<td>
 				<div className="flex items-center space-x-3">
 					<div className="avatar">
-						<div className="mask mask-squircle w-12 h-12">
+						<div className={`mask mask-squircle w-12 h-12 avatar ${status}`}>
 							<img src={`${avatar}`} alt="Avatar Tailwind CSS Component" />
 						</div>
 					</div>
@@ -38,7 +56,7 @@ const TableRow = ({name, country, rank, avatar, played, level, link, rate}: RowD
 			</td>
 			<td>{level} level</td>
 			<th>
-				<Link to={link} className="btn btn-ghost btn-xs">details</Link>
+				<Link to={`/users/${link}`} className="btn btn-ghost btn-xs">details</Link>
 			</th>
 		</tr>
 	);
