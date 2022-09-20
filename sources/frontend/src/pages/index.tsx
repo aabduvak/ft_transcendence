@@ -1,5 +1,4 @@
 import About from './About';
-import Forum from './Forum';
 import Home from './Home';
 import Team from './Team';
 import Play from './Play';
@@ -8,10 +7,10 @@ import LeaderBoard from './Board';
 import Users from './Users';
 import Http404 from './Error';
 import Profile from './Profile';
+import Chat from './Chat';
 
 export {
 	About,
-	Forum,
 	Home,
 	Team,
 	Play,
@@ -19,5 +18,6 @@ export {
 	LeaderBoard,
 	Users,
 	Http404,
-	Profile
+	Profile,
+	Chat
 };
