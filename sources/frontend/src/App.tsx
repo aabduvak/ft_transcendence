@@ -19,7 +19,8 @@ import {
     Users,
     Http404,
     Profile,
-    Chat
+    Chat,
+    Settings
 } from './pages';
 
 const App = () => {
@@ -49,6 +50,7 @@ const App = () => {
                     <Route path='/auth' element={<Home />} />
                     <Route path='/chat' element={<Chat />} />
                     <Route path='/logout' element={<Home />} />
+                    <Route path='/settings' element={<Settings/>}/>
                     <Route path='*' element={<Http404 />} />
                 </Routes>
                 <Footer />

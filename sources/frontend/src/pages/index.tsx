@@ -8,6 +8,7 @@ import Users from './Users';
 import Http404 from './Error';
 import Profile from './Profile';
 import Chat from './Chat';
+import Settings from './Settings';
 
 export {
 	About,
@@ -19,5 +20,6 @@ export {
 	Users,
 	Http404,
 	Profile,
-	Chat
+	Chat,
+	Settings
 };
