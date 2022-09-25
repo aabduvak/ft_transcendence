@@ -52,6 +52,35 @@ const ChatRooms = () => {
 					isOnline={false}
 				/>
 				
+				<div className="divider"></div>
+				
+				<ChatItem
+					avatar='https://daisyui.com/tailwind-css-component-profile-5@56w.png'
+					name='Yancy Tear'
+					message='you son of bitch🤬🤬 I will f...'
+					time='03:42'
+					isOnline={false}
+				/>
+				
+				<div className="divider"></div>
+				
+				<ChatItem
+					avatar='https://daisyui.com/tailwind-css-component-profile-5@56w.png'
+					name='Yancy Tear'
+					message='you son of bitch🤬🤬 I will f...'
+					time='03:42'
+					isOnline={false}
+				/>
+				
+				<div className="divider"></div>
+				
+				<ChatItem
+					avatar='https://daisyui.com/tailwind-css-component-profile-5@56w.png'
+					name='Yancy Tear'
+					message='you son of bitch🤬🤬 I will f...'
+					time='03:42'
+					isOnline={false}
+				/>
 		</React.Fragment>
 	);
 }

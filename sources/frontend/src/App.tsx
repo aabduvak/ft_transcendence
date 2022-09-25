@@ -32,10 +32,6 @@ const App = () => {
     const logout = useCallback(() => {
         setIsLoggedIn(false);
     }, []);
-
-    let routes = [];
-    
-    
     
     return (
         <div className="App">
@@ -51,7 +47,7 @@ const App = () => {
                     <Route path='/users' element={<Users />} />
                     <Route path='/users/:userId' element={<Profile />} />
                     <Route path='/auth' element={<Home />} />
-                    <Route path='/chat' element={<Chat />}/>
+                    <Route path='/chat' element={<Chat />} />
                     <Route path='/logout' element={<Home />} />
                     <Route path='*' element={<Http404 />} />
                 </Routes>

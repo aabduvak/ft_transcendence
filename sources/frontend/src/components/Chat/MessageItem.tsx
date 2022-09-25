@@ -19,7 +19,7 @@ const MessageItem = ({ avatar, message, time, owner }: MessageDetails) => {
 	let data = (
 		<React.Fragment>
 			<div className="message-item grid grid-cols-8 mb-4 receiver">
-				<Content message={message} className={`col-start-3 rounded-tl-none`} />
+				<Content message={message} className={`col-start-3 rounded-tr-none bg-secondary-content`} />
 				<Avatar avatar={avatar} time={time} />
 			</div>
 		</React.Fragment>
@@ -30,7 +30,7 @@ const MessageItem = ({ avatar, message, time, owner }: MessageDetails) => {
 			<React.Fragment>
 				<div className={`message-item grid grid-cols-8 mb-4 sender`}>
 					<Avatar avatar={avatar} time={time} />
-					<Content message={message} className={`rounded-tl-none`} />
+					<Content message={message} className={`rounded-tl-none bg-primary-content`} />
 				</div>
 			</React.Fragment>
 		);
