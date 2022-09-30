@@ -1,20 +1,28 @@
-import { Controller, Get, Post, Query } from '@nestjs/common';
+import { Controller, Get, Param, Put, Body, Post, Query } from '@nestjs/common';
 import { AppService } from './app.service';
 import { HttpService } from '@nestjs/axios';
+import { UsersService } from './users/users.service';
+import { Users } from './users/users.entity';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+  constructor(
+    private readonly appService: AppService,
+    private readonly usersService: UsersService
+  ) {}
 
   @Get()
   async getMain() {
-    return "welcome to the world where there are no users";
+    return this.appService.getMain();
   }
 
   @Get('signin')
-    async makeGet(@Query('code') code:string) {
-        if (code != undefined)
-            return await this.appService.serviceGet(code);
-        return this.getMain();
-    }
+    async signIn(@Query('code') code:string) {
+      return await this.appService.signIn(code);
+  }
+
+  @Post('/update')
+  async updateUser(@Body() params: Users) {
+    return await this.usersService.udpate(params.id, params);
+  }
 }
