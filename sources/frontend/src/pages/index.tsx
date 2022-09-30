@@ -1,0 +1,25 @@
+import About from './About';
+import Home from './Home';
+import Team from './Team';
+import Play from './Play';
+import History from './History';
+import LeaderBoard from './Board';
+import Users from './Users';
+import Http404 from './Error';
+import Profile from './Profile';
+import Chat from './Chat';
+import Settings from './Settings';
+
+export {
+	About,
+	Home,
+	Team,
+	Play,
+	History,
+	LeaderBoard,
+	Users,
+	Http404,
+	Profile,
+	Chat,
+	Settings
+};

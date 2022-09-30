@@ -24,18 +24,18 @@ services:
   #     - general
   #   restart: always
 
-  database:
-    container_name: database
-    image: postgres
-    networks:
-      - general
-    environment:
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-    ports:
-      - "5432:5432"
-    volumes:
-      - /database:/var/lib/postgresql/data
-    restart: always
+  #database:
+  #  container_name: database
+  #  image: postgres
+  #  networks:
+  #    - general
+  #  environment:
+  #    - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+  #  ports:
+  #    - "5432:5432"
+  #  volumes:
+  #    - /database:/var/lib/postgresql/data
+  #  restart: always
 
 volumes:
   database: 
